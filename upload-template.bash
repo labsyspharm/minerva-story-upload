@@ -15,6 +15,6 @@ OUT_URL="s3://${BUCKET}/${INPUT_PROJECT}/${INPUT_NAME}"
 FLAGS="--recursive --acl public-read"
 
 module load gcc python/3.7.4
-CMD="aws s3 cp $FLAGS $OUT_DIR OUT_URL"
+CMD="aws s3 cp $FLAGS $OUT_DIR $OUT_URL"
 echo $CMD
 exec $CMD
