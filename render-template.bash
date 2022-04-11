@@ -20,7 +20,7 @@ OUT_URL="https://s3.amazonaws.com/${BUCKET}/${INPUT_PROJECT}/${INPUT_NAME}"
 OUT_DIR="${OUTPUT_ROOT}/${INPUT_PROJECT}/${INPUT_NAME}"
 
 CMD="python $SCRIPT $IMG_DIR/$INPUT_IMAGE $STORY_JSON $OUT_DIR --url $OUT_URL"
-source activate author
+conda activate author
 
 echo $CMD
 exec $CMD

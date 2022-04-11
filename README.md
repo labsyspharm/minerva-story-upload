@@ -75,6 +75,7 @@ sbatch copy-template.bash
 
 Move on once `squeue -u $USER` shows only one command with the NAME of "bash".
 
+`mkdir ~/data`
 
 Now, Edit "render-template.bash"
 
