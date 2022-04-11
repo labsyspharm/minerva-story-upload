@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -c 1
 #SBATCH -p transfer
-#SBATCH --mem 8g
+#SBATCH --mem 1g
 #SBATCH -t 12:00:00
 INPUT_PROJECT="YOUR-PROJECT-NAME"
 INPUT_NAME="YOUR-STORY-NAME"
