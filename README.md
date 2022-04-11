@@ -27,8 +27,8 @@ Email the Uploader the following information:
 
 - Know your O2 Login Username / Password
 - Understand how to ssh from a command line
-
-Transfer any .story.json or .csv files to o2:
+- Transfer any .story.json or .csv files to o2
+  - use specific `final-story-files` folder name
 
 ```
 scp -r final-story-files USER@o2.hms.harvard.edu:/home/USER/final-story-files 
