@@ -107,3 +107,13 @@ Now, Edit "upload-template.bash"
 
 - set `INPUT_PROJECT="project name"`
 - set `INPUT_NAME="story name"`
+
+Becaues `sbatch upload-template.bash` results in "aws" command unavailable,
+I have run the following two commands (from an srun job on o2) as a workaround:
+
+```
+ssh transfer
+bash upload-template.bash
+```
+
+Now, the `story.json` files in `~/data` should be able to render Minerva Stories, with images loaded from S3
