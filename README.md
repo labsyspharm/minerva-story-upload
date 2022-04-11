@@ -86,17 +86,8 @@ Now, Edit "render-template.bash"
 
 You will also need to edit you "story.json" file. 
 
-- Replace the `in_file` value with `/n/scratch3/users/U/USER/INPUT_PROJECT`
-  - where and `INPUT_PROJECT` must match your template edits
-  - were `USER` is your username and `U` is the first letter of your username
-
-In Vim, the replacement command would look like:
-
-```
-%s@\("in_file": \)"[^"]*[\\/]\(.\{-}\.tif\)"@\1"/n/scratch3/users/U/USER/INPUT_PROJECT/\2"@gc
-```
-
-- Replace all paths to csv files to paths accessible to your user on o2
+- The `in_file` key will be ignored in favor of `/n/scratch3/users/U/USER/INPUT_PROJECT`
+- But you must replace all paths to csv files to paths accessible to your user on o2
 
 In Vim, the replacement command would look like:
 
