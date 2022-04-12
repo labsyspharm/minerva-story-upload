@@ -249,7 +249,7 @@ The UI should now look like this:
 ---
 title: PAGE TITLE
 layout: osd-exhibit
-paper: PROJECT-NAME-2022
+paper: config-PROJECT-NAME-2022
 figure: STORY-NAME
 ---
 ```
