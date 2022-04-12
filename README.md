@@ -321,6 +321,21 @@ title: PROJECT TITLE
 
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
+Click "Add File" and "Create New File"... then begin typing or pasting:
+
+In the "Name of file..." input, type:
+ - `assets/img/`
+ - your project/paper name without spaces
+ - `-2022/` (or the year used for the story on cycif.org)
+ - your story/figure name without spaces
+ - `.jpg`
+
+The UI should now look like this:
+
+<img width="525" alt="jpg" src="https://user-images.githubusercontent.com/9781588/163034845-7d28e181-30b5-42d9-aaf2-fbd0a5915cce.png">
+
+
+
 ## Modifying Tissue Atlas
 
 Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissueatlas).
@@ -340,7 +355,7 @@ https://github.com/YOUR-USERNAME/harvardtissueatlas
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
- - `_data-cards/`(no underscore)
+ - `_data-cards/`
  - your project/paper name without spaces
  - `-2022/` (or the year used for the story on cycif.org)
  - `osd-` 
@@ -393,5 +408,3 @@ Go to the [CyCIF.org repository](https://github.com/labsyspharm/cycif.org).
 
 - Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissueatlas).
 - Repeat the steps documented for submitting changes to CyCIF.org
-
-
