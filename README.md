@@ -35,7 +35,7 @@ Here's an outline of this process:
 
 ### Bundling
 
-Send the following info to the person responsible for rendering:
+Send the following info to the person responsible for the next step:
   - The `story.json` file
   - Any HiTS/LSP image paths, if not using HiTS/LSP shared storage
   - Any CSV files used for names/segmentation, if not using HiTS/LSP shared storage
