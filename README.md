@@ -342,6 +342,7 @@ GitHub only allows us to create text files from their website
   - Rename your screenshot to `STORY-NAME.jpg`, with `STORY-NAME` replaced
 
 WIthin the `cycif.org/assets/img/project-name/` directory, click "add file" and "upload files":
+  - Navigate to your `STORY-NAME.jpg` and upload the image.
 
 
 ## Modifying Tissue Atlas
