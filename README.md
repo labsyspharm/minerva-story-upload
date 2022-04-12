@@ -1,4 +1,4 @@
-Here's an outline of this process:
+The three steps can each be done by different people at different times.
 
 1. [Writing the Story][A]
   * Does not require command line
