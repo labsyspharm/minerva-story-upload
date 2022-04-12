@@ -160,6 +160,26 @@ Go to the [CyCIF.org repository](https://github.com/labsyspharm/cycif.org).
 
 Click the "Fork" icon to make your own copy of the repository.
 
+Ensure that you have transferred to your own fork on GitHub. The URL should be:
+
+```
+https://github.com/YOUR-USERNAME/cycif.org
+```
+
+Click "Add File" and "Create New File"... then begin typing or pasting:
+
+In the "Name of file..." input, type:
+ - `_data/`
+ - your project name without spaces
+ - `2022/` (or the current year)
+ - your story name without spaces
+
+The UI should now look like this:
+
+<img width="516" alt="projcet-name and story-name src="https://user-images.githubusercontent.com/9781588/163007158-b974d0cc-2aa1-41fb-9816-4854dd48960d.png">
+
+
+
 ### Modifying Tissue Atlas
 
 Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissueatlas).
@@ -167,6 +187,12 @@ Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissue
 <img width="293" alt="fork the repository" src="https://user-images.githubusercontent.com/9781588/163002843-e064bc7f-13ce-4915-b7e3-e76e8ca3948d.png">
 
 Click the "Fork" icon to make your own copy of the repository.
+
+Ensure that you have transferred to your own fork on GitHub. The URL should be:
+
+```
+https://github.com/YOUR-USERNAME/harvardtissueatlas
+```
 
 ### Submitting changes for approval
 
