@@ -228,7 +228,6 @@ The UI should now look like this:
 
 * Now copy and paste the contents of your `exhibit.json` file into the body of the new file.
   - The contents of this file should start with a `{` and end with a `}`
-* Now click the `<> Code` icon on the left to return to the root of your fork.
 
 - While in the "\_data/config-PROJECT-NAME-YEAR/" directory
     - add a new file based on this template, called `index.yml`:
@@ -258,6 +257,8 @@ PROJCET TITLE:
 - The year eg. `2022`, must match the year used in uploading your `exhibit.json` 
 - The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
 - The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
+
+* Now click the `<> Code` icon on the left to return to the root of your fork.
 
 ### Uploading page markup
 
@@ -319,10 +320,9 @@ title: PROJECT TITLE
 ```
 
 - Set the PROJECT TITLE to a descriptive title of your project/paper.
+- Now click the `<> Code` icon on the left to return to the root of your fork.
 
 ## Addding images
-
-* Now click the `<> Code` icon on the left to return to the root of your fork.
 
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
