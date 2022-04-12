@@ -390,9 +390,13 @@ show_page_link: false
 - The `PROJECT-NAME` must match the `project-name` used on cycif.org
 - The `STORY-NAME` must match the `story-name` used on cycif.org
 
-## Uploading Atlas information
+Additionally, add the following line below the date if the project belongs to an atlas:
 
-You should also add or modify a `.yml` file in `harvardtissueatlas/_atlases/` to officially link to your story from one of the Tissue Atlases. 
+```
+atlas: ATLAS
+```
+
+- Replace the word "ATLAS" with the name of the atlas including the images you're publishing.
 
 ## Submitting changes for approval
 
