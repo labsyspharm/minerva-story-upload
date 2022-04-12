@@ -144,9 +144,13 @@ Now, the `story.json` files in `~/data` should be able to render Minerva Stories
 # Uploading the story to GitHub
 
 There are three steps to publishing to "tissue-atlas.org"
-- Modify a copy of `cycif.org` to include your `exibit.json`
-- Modify a copy of `tissue-atlas.org` to include a link to `cyif.org`
-- Submit both modifications for approval.
+- [Modify a copy of `cycif.org`][C1] to include your `exibit.json`
+- [Modify a copy of `tissue-atlas.org`][C2] to include a link to `cyif.org`
+- [Submit both][C3] modifications for approval.
+
+[C1]: https://github.com/labsyspharm/minerva-story-upload/#modifying-cyciforg
+[C2]: https://github.com/labsyspharm/minerva-story-upload/#modifying-tissue-atlas
+[C3]: https://github.com/labsyspharm/minerva-story-upload/#submitting-changes-for-approval
 
 ### Modifying CyCIF.org
 
@@ -164,5 +168,5 @@ Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissue
 
 Click the "Fork" icon to make your own copy of the repository.
 
-### Submitting your changes for approval
+### Submitting changes for approval
 
