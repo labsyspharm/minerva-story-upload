@@ -226,6 +226,36 @@ The UI should now look like this:
   - The contents of this file should start with a `{` and end with a `}`
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
+While in the "\_data/config-PROJECT-NAME-YEAR/" directory, add a new file called `index.yml`:
+
+- While in the "\_data/config-PROJECT-NAME-YEAR/" directory
+    - add a new file based on this template, called `index.yml`:
+
+```
+publication:
+  title: PAPER TITLE
+  authors: AUTHORS
+  journal: "Nat Protoc. 2019 Oct; 14(10): 2900-2930. PMID: 31534232."
+  links:
+    - Publisher Page: ARTILCLE-LINK
+
+PROJCET TITLE:
+  - title: PROJCET TITLE
+    description: PROJECT DESCRIPTION
+    thumbnail file name: PROJECT-NAME-YEAR.jpg
+    links:
+      - PAGE TITLE: osd-STORY-NAME
+```
+
+- The `PAPER TITLE` should be the title of the associated paper
+- The `AUTHORS` should be comma-separated list of authors of the paper
+- The `PROJECT TITLE` can be anything related to the project
+- The `PAGE TITLE` can be anything related to the story
+
+- The year eg. `2022`, must match the year used in uploading your `exhibit.json` 
+- The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
+- The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
+
 ### Uploading page markup
 
 Click "Add File" and "Create New File"... then begin typing or pasting:
@@ -262,7 +292,9 @@ figure: STORY-NAME
 
 ## Add index.html
 
-While in the "data/PROJECT-NAME-YEAR/" directory, add a new file called `index.html`:
+- While in the "data/PROJECT-NAME-YEAR/" directory
+    - add a new file based on this template, called `index.html`:
+
 ```
 ---
 layout: default
@@ -325,7 +357,7 @@ The UI should now look like this:
 ---
 title: TITLE
 date: '2022-04-12'
-image: https://www.cycif.org/assets/img/PROJECT-NAME-YEAR/osd-STORY-NAME.jpg
+image: https://www.cycif.org/assets/img/PROJECT-NAME-YEAR.jpg
 minerva_link: https://www.cycif.org/data/PROJECT-NAME-YEAR/osd-STORY-NAME.html
 info_link: https://www.cycif.org/data/PROJECT-NAME-YEAR/index.html
 show_page_link: false
