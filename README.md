@@ -179,7 +179,7 @@ In the "Name of file..." input, type:
 
 The UI should now look like this:
 
-<img width="516" alt="projcet-name and story-name" src="https://user-images.githubusercontent.com/9781588/163007158-b974d0cc-2aa1-41fb-9816-4854dd48960d.png">
+<img width="552" alt="exhibit config name" src="https://user-images.githubusercontent.com/9781588/163011253-4f68377f-b758-4ffb-9e3d-1da5a8b3698c.png">
 
 * Now copy and paste the contents of your `exhibit.json` file into the body of the new file.
   - The contents of this file should start with a `{` and end with a `}`
@@ -191,6 +191,7 @@ Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
  - `data/`(no underscore)
+ - `config-`
  - your project/paper name without spaces
  - `-2022/` (or the current year)
  - `osd-` 
