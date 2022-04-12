@@ -275,6 +275,42 @@ Ensure that you have transferred to your own fork on GitHub. The URL should be:
 https://github.com/YOUR-USERNAME/harvardtissueatlas
 ```
 
+### Uploading page markup
+
+Click "Add File" and "Create New File"... then begin typing or pasting:
+
+In the "Name of file..." input, type:
+ - `_data-cards/`(no underscore)
+ - your project/paper name without spaces
+ - `-2022/` (or the year used for the story on cycif.org)
+ - `osd-` 
+ - your story/figure name without spaces
+ - `.md` (Markdown)
+
+The UI should now look like this:
+
+<img width="607" alt="markdown file name" src="https://user-images.githubusercontent.com/9781588/163029418-794f21eb-83a8-47c4-84f4-9fe067340f88.png">
+
+* Now modify, copy and paste this template into the body of the new file:
+
+```md
+---
+title: Clinical Features of Tuberculosis Granulomas
+image: https://www.cycif.org/assets/img/tuberculosis-granulomas-2022/features.jpg
+date: '2022-04-12'
+minerva_link: https://www.cycif.org/data/tuberculosis-granulomas-2022/features.html
+info_link: https://www.cycif.org/data/tuberculosis-granulomas-2022/index.html
+show_page_link: false
+---
+```
+
+- The `PAGE TITLE` can be anything
+- The date should be in 'YYYY-MM-DD' format. The quotes are needed.
+- THE `YEAR` must match the `YEAR` used for the story on cycif.org
+- The `PROJECT-NAME` must match the `project-name` used on cycif.org
+- The `STORY-NAME` must match the `story-name` used on cycif.org
+
+
 ## Submitting changes for approval
 
 ### Submitting changes to CyCIF.org
