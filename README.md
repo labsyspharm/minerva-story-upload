@@ -144,7 +144,7 @@ Now, the `story.json` files in `~/data` should be able to render Minerva Stories
 # Uploading the story to GitHub
 
 There are three steps to publishing to "tissue-atlas.org"
-- [Modify a copy of `cycif.org`][C1] to include your `exibit.json`
+- [Modify a copy of `cycif.org`][C1] to include your `exhibit.json`
 - [Modify a copy of `tissue-atlas.org`][C2] to include a link to `cyif.org`
 - [Submit both][C3] modifications for approval.
 
