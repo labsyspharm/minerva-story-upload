@@ -1,4 +1,4 @@
-## For Authors
+# For Authors
 
 ### Prerequesites 
 
@@ -94,6 +94,11 @@ In Vim, the replacement command would look like:
 ```
 %s@\("csv_file": \)"[^"]*[\\/]\(.\{-}\.csv\)@\1"/home/USER/final-story-files/markers.csv"@gc
 ```
+
+Optionally, to underline markers in color, surround the markers in backticks
+
+- The text "CD4" becomes "\`CD4\`" in order to enable marker underlines
+- In Vim, you could run``%s@\([^"`]\)\<\(CD4\)\>\([^"`]\)@\1`\2`\3@gc``
 
 Then schedule the render:
 
