@@ -142,3 +142,15 @@ sbatch upload-template.bash
 Now, the `story.json` files in `~/data` should be able to render Minerva Stories, with images loaded from S3
 
 # Uploading the story to GitHub
+
+There are three steps to publishing to "tissue-atlas.org"
+- Modify a copy of `cycif.org` to include your `exibit.json`
+- Modify a copy of `tissue-atlas.org` to include a link to `cyif.org`
+- Submit both modifications for approval.
+
+Go to the [CyCIF.org repository](https://github.com/labsyspharm/cycif.org).
+
+<img width="293" alt="fork the repository" src="https://user-images.githubusercontent.com/9781588/163002843-e064bc7f-13ce-4915-b7e3-e76e8ca3948d.png">
+
+Click the "Fork" icon to make your own copy of the repository.
+
