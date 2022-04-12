@@ -178,7 +178,9 @@ The UI should now look like this:
 
 <img width="516" alt="projcet-name and story-name" src="https://user-images.githubusercontent.com/9781588/163007158-b974d0cc-2aa1-41fb-9816-4854dd48960d.png">
 
-
+* Now copy and paste the contents of your `exhibit.json` file into the body of the new file.
+  - The contents of this file should start with a `{` and end with a `}`
+* Now click the `<> Code` icon on the left of the nav bar to return to the root of your fork.
 
 ### Modifying Tissue Atlas
 
