@@ -254,9 +254,9 @@ PROJCET TITLE:
 - The `PROJECT TITLE` can be anything related to the project
 - The `PAGE TITLE` can be anything related to the story
 
-- The year eg. `2022`, must match the year used in uploading your `exhibit.json` 
-- The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
-- The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
+- The year eg. `2022`, must match the year used when adding your `exhibit.json` 
+- The `PROJECT-NAME` must match the `project-name` used when adding your `exhibit.json`
+- The `STORY-NAME` must match the `story-name` used when adding your `exhibit.json`
 
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
