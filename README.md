@@ -338,9 +338,9 @@ The UI should now look like this:
 <img width="552" alt="jpg pathname" src="https://user-images.githubusercontent.com/9781588/163036133-d8150903-183e-4f19-8cb7-8353e9f82435.png">
 
 GitHub's Website only allows us to create new folders for text files 
-  - Create the empty "STORY-NAME.jpg" anyway, (to create a folder for your project's thumbnail)
-  - Then rename your screenshot on your computer 
-  - Upload to overwrite the empty`STORY-NAME.jpg` file
+  - Create the empty "STORY-NAME.jpg" anyway
+  - Then rename your screenshot on your computer to match your `STORY-NAME.jpg` file
+  - Upload to overwrite the empty `STORY-NAME.jpg` file
 
 WIthin the `cycif.org/assets/img/project-name/` directory, click "add file" and "upload files":
   - Navigate to your `STORY-NAME.jpg` and upload the image.
