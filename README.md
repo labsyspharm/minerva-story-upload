@@ -207,13 +207,14 @@ The UI should now look like this:
 ---
 title: PAGE TITLE
 layout: osd-exhibit
-paper: PROJECT-NAME
+paper: PROJECT-NAME-2022
 figure: STORY-NAME
 ---
 ```
 
 - The `PAGE TITLE` can be anything
 - The text `osd-exhibit` must not be changed
+- The year eg. `2022`, must match the year used in uploading your `exhibit.json` 
 - The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
 - The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
 
