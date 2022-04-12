@@ -1,4 +1,4 @@
-# For Authors
+# Writing the story
 
 ### Prerequesites 
 
@@ -16,12 +16,12 @@
 
 ### Bundling
 
-Email the Uploader the following information:
+Send the following info to the person responsible for rendering:
   - The `story.json` file
   - Any HiTS/LSP image paths, if not using HiTS/LSP shared storage
   - Any CSV files used for names/segmentation, if not using HiTS/LSP shared storage
 
-## For Uploaders
+# Rendering and uploading images
 
 ### Prerequesites 
 
@@ -100,6 +100,12 @@ Optionally, to underline markers in color, surround the markers in backticks
 - The text "CD4" becomes "\`CD4\`" in order to enable marker underlines
 - In Vim, you could run``%s@\([^"`]\)\<\(CD4\)\>\([^"`]\)@\1`\2`\3@gc``
 
+To replace multiple markers, separte each marker with `\|`:
+
+```
+%s@\([^"`]\)\<\(DNA1\|DNA2\|DNA3\)\>\([^"`]\)@\1`\2`\3@gc
+```
+
 Then schedule the render:
 
 ```
@@ -122,3 +128,5 @@ bash upload-template.bash
 ```
 
 Now, the `story.json` files in `~/data` should be able to render Minerva Stories, with images loaded from S3
+
+# Uploading the story to GitHub
