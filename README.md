@@ -171,7 +171,7 @@ Click "Add File" and "Create New File"... then begin typing or pasting:
 In the "Name of file..." input, type:
  - `_data/`
  - your project name without spaces
- - `2022/` (or the current year)
+ - `-2022/` (or the current year)
  - your story name without spaces
 
 The UI should now look like this:
