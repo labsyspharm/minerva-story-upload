@@ -38,7 +38,7 @@ Send the following info to the person responsible for rendering:
 
 # Rendering and uploading images
 
-- [Prerequesites][B1]
+- [Login to O2][B1]
 - [O2 Environment][B2]
 - [Final Story Files][B3]
 - [Copy to scratch3][B4]
@@ -48,7 +48,7 @@ Send the following info to the person responsible for rendering:
 - [Upload Images][B8]
 - [Copy the `exhibit.json`][B9]
 
-[B1]: https://github.com/labsyspharm/minerva-story-upload/#prerequesites
+[B1]: https://github.com/labsyspharm/minerva-story-upload/#login-to-o2
 [B2]: https://github.com/labsyspharm/minerva-story-upload/#o2-environment
 [B3]: https://github.com/labsyspharm/minerva-story-upload/#final-story-files
 [B4]: https://github.com/labsyspharm/minerva-story-upload/#copy-to-scratch3
@@ -58,7 +58,7 @@ Send the following info to the person responsible for rendering:
 [B8]: https://github.com/labsyspharm/minerva-story-upload/#upload-images
 [B9]: https://github.com/labsyspharm/minerva-story-upload/#copy-the-exhibitjson
 
-### Prerequesites 
+### Login to O2 
 
 - Know your O2 Login Username / Password
 - Understand how to ssh from a command line
