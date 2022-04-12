@@ -97,7 +97,7 @@ conda env update -f requirements.yml
 
 ### Final Story Files
 
-- Invent a "project name" and a "story name" for each story.
+- Invent a "project-name" and a "story-name" for each story.
 - Notice the names of your ome-tiff image files
 - Ensure your json files are on o2
   - They should all be in `~/final-story-files`
@@ -106,7 +106,7 @@ conda env update -f requirements.yml
 
 Now Edit "copy-template.bash",
 
-- set `INPUT_PROJECT="project name"`
+- set `INPUT_PROJECT="project-name"`
 - set `INPUT_PATH` to the path to your OME-TIFF on HiTS/LSP shared storage
 - This will attempt to copy images to `scratch3`
 
@@ -150,8 +150,8 @@ To replace multiple markers, separte each marker with `\|`:
 
 Now, Edit "render-template.bash"
 
-- set `INPUT_PROJECT="project name"`
-- set `INPUT_NAME="story name"`
+- set `INPUT_PROJECT="project-name"`
+- set `INPUT_NAME="story-name"`
 - set `INPUT_IMAGE` to the name of the image in `scratch3`
 - set `INPUT_JSON` to the name of the "story.json" file in `~/final-story-files`
 
@@ -167,8 +167,8 @@ Move on once `squeue -u $USER` shows only one command with the NAME of "bash".
 
 Now, Edit "upload-template.bash"
 
-- set `INPUT_PROJECT="project name"`
-- set `INPUT_NAME="story name"`
+- set `INPUT_PROJECT="project-name"`
+- set `INPUT_NAME="story-name"`
 
 Then schedule the upload:
 ```
