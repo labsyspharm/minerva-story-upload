@@ -171,10 +171,11 @@ https://github.com/YOUR-USERNAME/cycif.org
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
- - `_data/`
- - your project name without spaces
+ - `_data/` (underscore in front)
+ - your project/paper name without spaces
  - `-2022/` (or the current year)
- - your story name without spaces
+ - your story/figure name without spaces
+ - `.json`
 
 The UI should now look like this:
 
@@ -184,15 +185,39 @@ The UI should now look like this:
   - The contents of this file should start with a `{` and end with a `}`
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
-#### Uploading page configuration
+#### Uploading page markup
 
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
- - `_data/`
- - your project name without spaces
+ - `data/`(no underscore)
+ - your project/paper name without spaces
  - `-2022/` (or the current year)
- - your story name without spaces
+ - `osd-` 
+ - your story/figure name without spaces
+ - `.md` (Markdown)
+
+The UI should now look like this:
+
+<img width="461" alt="markdown file name" src="https://user-images.githubusercontent.com/9781588/163009040-fb6aa326-bc7a-4ded-9d61-b0139d1c4699.png">
+
+
+* Now modify, copy and paste this template into the body of the new file:
+
+```md
+---
+title: PAGE TITLE
+layout: osd-exhibit
+paper: PROJECT-NAME
+figure: STORY-NAME
+---
+```
+
+- The `PAGE TITLE` can be anything
+- The text `osd-exhibit` must not be changed
+- The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
+- The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
+
 
 ### Modifying Tissue Atlas
 
