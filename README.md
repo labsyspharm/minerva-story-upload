@@ -295,11 +295,11 @@ The UI should now look like this:
 
 ```md
 ---
-title: Clinical Features of Tuberculosis Granulomas
-image: https://www.cycif.org/assets/img/tuberculosis-granulomas-2022/features.jpg
+title: TITLE
 date: '2022-04-12'
-minerva_link: https://www.cycif.org/data/tuberculosis-granulomas-2022/features.html
-info_link: https://www.cycif.org/data/tuberculosis-granulomas-2022/index.html
+image: https://www.cycif.org/assets/img/PROJECT-NAME-YEAR/osd-STORY-NAME.jpg
+minerva_link: https://www.cycif.org/data/PROJECT-NAME-YEAR/osd-STORY-NAME.html
+info_link: https://www.cycif.org/data/PROJECT-NAME-YEAR/index.html
 show_page_link: false
 ---
 ```
