@@ -2,6 +2,7 @@ Here's an outline of this process:
 
 1. [Writing the Story][A]
   * Does not require command line
+  * Requires Minerva Author
 
 2. [Rendering and Uploading Images][B]
   * Requires command line knowledge
