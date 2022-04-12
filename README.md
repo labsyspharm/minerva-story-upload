@@ -59,7 +59,7 @@ cd minerva-author
 git checkout o2
 ```
 
-Install Minerva Author
+### Install Minerva Author
 
 ```
 git submodule update --init --recursive
@@ -69,12 +69,14 @@ conda activate author
 conda env update -f requirements.yml
 ```
 
-### Story Creation
+### Final Story Files
 
 - Invent a "project name" and a "story name" for each story.
 - Notice the names of your ome-tiff image files
 - Ensure your json files are on o2
   - They should all be in `~/final-story-files`
+
+### Copy to scratch3
 
 Now Edit "copy-template.bash",
 
@@ -92,12 +94,7 @@ Move on once `squeue -u $USER` shows only one command with the NAME of "bash".
 
 `mkdir ~/data`
 
-Now, Edit "render-template.bash"
-
-- set `INPUT_PROJECT="project name"`
-- set `INPUT_NAME="story name"`
-- set `INPUT_IMAGE` to the name of the image in `scratch3`
-- set `INPUT_JSON` to the name of the "story.json" file in `~/final-story-files`
+### Specify CSV paths
 
 You will also need to edit you "story.json" file. 
 
@@ -110,6 +107,8 @@ In Vim, the replacement command would look like:
 %s@\("csv_file": \)"[^"]*[\\/]\(.\{-}\.csv\)@\1"/home/USER/final-story-files/markers.csv"@gc
 ```
 
+### Underline markers
+
 Optionally, to underline markers in color, surround the markers in backticks
 
 - The text "CD4" becomes "\`CD4\`" in order to enable marker underlines
@@ -121,6 +120,15 @@ To replace multiple markers, separte each marker with `\|`:
 %s@\([^"`]\)\<\(DNA1\|DNA2\|DNA3\)\>\([^"`]\)@\1`\2`\3@gc
 ```
 
+### Render Images
+
+Now, Edit "render-template.bash"
+
+- set `INPUT_PROJECT="project name"`
+- set `INPUT_NAME="story name"`
+- set `INPUT_IMAGE` to the name of the image in `scratch3`
+- set `INPUT_JSON` to the name of the "story.json" file in `~/final-story-files`
+
 Then schedule the render:
 
 ```
@@ -128,6 +136,8 @@ sbatch render-template.bash
 ```
 
 Move on once `squeue -u $USER` shows only one command with the NAME of "bash".
+
+### Upload Images
 
 Now, Edit "upload-template.bash"
 
