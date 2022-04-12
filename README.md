@@ -199,8 +199,7 @@ In the "Name of file..." input, type:
 
 The UI should now look like this:
 
-<img width="461" alt="markdown file name" src="https://user-images.githubusercontent.com/9781588/163009040-fb6aa326-bc7a-4ded-9d61-b0139d1c4699.png">
-
+<img width="503" alt="markdown file name" src="https://user-images.githubusercontent.com/9781588/163010180-007ecd19-5dee-48ae-98b6-087aa7ff4f4a.png">
 
 * Now modify, copy and paste this template into the body of the new file:
 
