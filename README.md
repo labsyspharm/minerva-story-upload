@@ -230,8 +230,6 @@ The UI should now look like this:
   - The contents of this file should start with a `{` and end with a `}`
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
-While in the "\_data/config-PROJECT-NAME-YEAR/" directory, add a new file called `index.yml`:
-
 - While in the "\_data/config-PROJECT-NAME-YEAR/" directory
     - add a new file based on this template, called `index.yml`:
 
