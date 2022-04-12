@@ -260,6 +260,34 @@ figure: STORY-NAME
 - The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
 - The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
 
+## Add index.html
+
+While in the "data/PROJECT-NAME-YEAR/" directory, add a new file called `index.html`:
+```
+---
+layout: default
+title: PROJECT TITLE
+---
+{% assign sectionId = page.url | split: '/' | last %}
+{% assign config = sectionId | prepend: 'config-' %}
+
+{% for yml_hash in site.data[config] %}
+    {% if yml_hash[0] == 'index' %}
+        {% assign pubData=yml_hash[1] %}
+    {% endif %}
+{% endfor %}
+
+{% include data-index-default.html
+    sectionId = sectionId
+    pubData=pubData
+    thumbnailDir=sectionId %}
+```
+
+- Set the PROJECT TITLE to a descriptive title of your project/paper.
+
+## Addding images
+
+* Now click the `<> Code` icon on the left to return to the root of your fork.
 
 ## Modifying Tissue Atlas
 
