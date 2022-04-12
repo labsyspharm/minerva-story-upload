@@ -176,7 +176,7 @@ In the "Name of file..." input, type:
 
 The UI should now look like this:
 
-<img width="516" alt="projcet-name and story-name src="https://user-images.githubusercontent.com/9781588/163007158-b974d0cc-2aa1-41fb-9816-4854dd48960d.png">
+<img width="516" alt="projcet-name and story-name" src="https://user-images.githubusercontent.com/9781588/163007158-b974d0cc-2aa1-41fb-9816-4854dd48960d.png">
 
 
 
