@@ -237,7 +237,7 @@ The UI should now look like this:
 publication:
   title: PAPER TITLE
   authors: AUTHORS
-  journal: "Nat Protoc. 2019 Oct; 14(10): 2900-2930. PMID: 31534232."
+  journal: JOURNAL
   links:
     - Publisher Page: ARTILCLE-LINK
 
@@ -251,6 +251,7 @@ PROJCET TITLE:
 
 - The `PAPER TITLE` should be the title of the associated paper
 - The `AUTHORS` should be comma-separated list of authors of the paper
+- The `JOURNAL` should be the name of the journal that published your paper, if any
 - The `PROJECT TITLE` can be anything related to the project
 - The `PAGE TITLE` can be anything related to the story
 
