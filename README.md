@@ -277,3 +277,25 @@ https://github.com/YOUR-USERNAME/harvardtissueatlas
 
 ## Submitting changes for approval
 
+### Submitting changes to CyCIF.org
+
+Go to the [CyCIF.org repository](https://github.com/labsyspharm/cycif.org).
+
+<img width="762" alt="Click Pull Requests" src="https://user-images.githubusercontent.com/9781588/163026733-8993b14b-cb5c-4bde-8036-c9766b9aca5a.png">
+
+- Click the "Pull Requests" Icon
+- Click "New Pull Request" in green
+- Click the "compare across forks" link
+
+<img width="827" alt="Screen Shot 2022-04-12 at 2 13 38 PM" src="https://user-images.githubusercontent.com/9781588/163026954-bf5dcb9f-7f35-4132-8e90-ea2c52f13b04.png">
+
+- Open the "Head repository" dropdown
+- Select your copy (fork) of cycif.org
+- Click "Create Pull Request" in green
+
+### Submitting changes to the Tissue Atlas
+
+- Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissueatlas).
+- Repeat the steps documented for submitting changes to CyCIF.org
+
+
