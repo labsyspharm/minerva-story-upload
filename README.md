@@ -30,7 +30,7 @@ Here's an outline of this process:
   - segmentation ID csv files
   - any csv files for infographics
 
-- Create your story in Minerva Author
+- [Create your story in Minerva Author](https://github.com/labsyspharm/minerva-story/wiki/How-to-make-a-Minerva-Story%3F)
 - **Save the story.json file**
 
 ### Bundling
