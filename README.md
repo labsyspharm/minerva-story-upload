@@ -38,6 +38,26 @@ Send the following info to the person responsible for rendering:
 
 # Rendering and uploading images
 
+- [Prerequesites][B1]
+- [O2 Environment][B2]
+- [Final Story Files][B3]
+- [Copy to scratch3][B4]
+- [Specify CSV paths][B5]
+- [Underline Markers (optional)][B6]
+- [Render Images][B7]
+- [Upload Images][B8]
+- [Copy the `exhibit.json`][B9]
+
+[B1]: https://github.com/labsyspharm/minerva-story-upload/#prerequesites
+[B2]: https://github.com/labsyspharm/minerva-story-upload/#o2-environment
+[B3]: https://github.com/labsyspharm/minerva-story-upload/#final-story-files
+[B4]: https://github.com/labsyspharm/minerva-story-upload/#copy-to-scratch3
+[B5]: https://github.com/labsyspharm/minerva-story-upload/#specify-csv-paths
+[B6]: https://github.com/labsyspharm/minerva-story-upload/#underline-markers
+[B7]: https://github.com/labsyspharm/minerva-story-upload/#render-images
+[B8]: https://github.com/labsyspharm/minerva-story-upload/#upload-images
+[B9]: https://github.com/labsyspharm/minerva-story-upload/#copy-the-exhibitjson
+
 ### Prerequesites 
 
 - Know your O2 Login Username / Password
@@ -51,6 +71,8 @@ scp -r final-story-files USER@o2.hms.harvard.edu:/home/USER/final-story-files
 
 ### O2 Environment 
 
+Login To O2
+
 ```
 ssh USERNAME@o2.hms.harvard.edu
 srun -p interactive -t 0-12:00 --mem 5G --pty /bin/bash
@@ -59,7 +81,7 @@ cd minerva-author
 git checkout o2
 ```
 
-### Install Minerva Author
+Install Minerva Author
 
 ```
 git submodule update --init --recursive
@@ -151,6 +173,15 @@ sbatch upload-template.bash
 
 Now, the `story.json` files in `~/data` should be able to render Minerva Stories, with images loaded from S3
 
+### Copy the exhibit.json
+
+Copy the `exhibit.json` from `~/data/INPUT_PROJECT/INPUT_NAME` to your own device:
+```
+scp USER@o2.hms.harvard.edu:/home/USER/data/INPUT_PROJECT/INPUT_NAME/exhibit.json .
+```
+
+Then send that `exhibit.json` to the person completing the next step:
+
 # Uploading the story to GitHub
 
 There are three steps to publishing to "tissue-atlas.org"
@@ -162,7 +193,7 @@ There are three steps to publishing to "tissue-atlas.org"
 [C2]: https://github.com/labsyspharm/minerva-story-upload/#modifying-tissue-atlas
 [C3]: https://github.com/labsyspharm/minerva-story-upload/#submitting-changes-for-approval
 
-### Modifying CyCIF.org
+## Modifying CyCIF.org
 
 Go to the [CyCIF.org repository](https://github.com/labsyspharm/cycif.org).
 
@@ -176,7 +207,7 @@ Ensure that you have transferred to your own fork on GitHub. The URL should be:
 https://github.com/YOUR-USERNAME/cycif.org
 ```
 
-#### Uploading exhibit.json
+### Uploading exhibit.json
 
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
@@ -195,7 +226,7 @@ The UI should now look like this:
   - The contents of this file should start with a `{` and end with a `}`
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
-#### Uploading page markup
+### Uploading page markup
 
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
@@ -230,7 +261,7 @@ figure: STORY-NAME
 - The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
 
 
-### Modifying Tissue Atlas
+## Modifying Tissue Atlas
 
 Go to the [Tissue Atlas repository](https://github.com/labsyspharm/harvardtissueatlas).
 
@@ -244,5 +275,5 @@ Ensure that you have transferred to your own fork on GitHub. The URL should be:
 https://github.com/YOUR-USERNAME/harvardtissueatlas
 ```
 
-### Submitting changes for approval
+## Submitting changes for approval
 
