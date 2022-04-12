@@ -1,12 +1,15 @@
 Here's an outline of this process:
 
 1. [Writing the Story][A]
+  * Does not require command line
 
 2. [Rendering and Uploading Images][B]
+  * Requires command line knowledge
   * This step requires O2 and AWS access
-  * This step requires use of the command line
 
 3. [Uploading the Story to GitHub][C]
+  * Does not require command line
+  * Requires a GitHub account
 
 
 [A]: https://github.com/labsyspharm/minerva-story-upload/#writing-the-story
