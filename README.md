@@ -166,6 +166,8 @@ Ensure that you have transferred to your own fork on GitHub. The URL should be:
 https://github.com/YOUR-USERNAME/cycif.org
 ```
 
+#### Uploading exhibit.json
+
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
@@ -180,7 +182,17 @@ The UI should now look like this:
 
 * Now copy and paste the contents of your `exhibit.json` file into the body of the new file.
   - The contents of this file should start with a `{` and end with a `}`
-* Now click the `<> Code` icon on the left of the nav bar to return to the root of your fork.
+* Now click the `<> Code` icon on the left to return to the root of your fork.
+
+#### Uploading page configuration
+
+Click "Add File" and "Create New File"... then begin typing or pasting:
+
+In the "Name of file..." input, type:
+ - `_data/`
+ - your project name without spaces
+ - `-2022/` (or the current year)
+ - your story name without spaces
 
 ### Modifying Tissue Atlas
 
