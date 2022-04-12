@@ -332,8 +332,13 @@ In the "Name of file..." input, type:
 
 The UI should now look like this:
 
-<img width="525" alt="jpg" src="https://user-images.githubusercontent.com/9781588/163034845-7d28e181-30b5-42d9-aaf2-fbd0a5915cce.png">
+<img width="552" alt="jpg pathname" src="https://user-images.githubusercontent.com/9781588/163036133-d8150903-183e-4f19-8cb7-8353e9f82435.png">
 
+GitHub only allows us to create text files from their website
+  - so we'll need to overwirte `story-name.jpg` with an actual image
+  - Rename your screenshot to `STORY-NAME.jpg`, with `STORY-NAME` replaced
+
+WIthin the `cycif.org/assets/img/project-name/` directory, click "add file" and "upload files":
 
 
 ## Modifying Tissue Atlas
