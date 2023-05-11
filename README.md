@@ -43,6 +43,21 @@ Send the following info to the person responsible for the next step:
 
 This describes local uses, [find specific O2 instructions here](https://github.com/labsyspharm/minerva-story-upload/tree/main/o2).
 
+### Prepare for AWS
+
+set up the AWS CLI:
+
+1. [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+
+2. [Configure your AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config)
+
+3. Create an S3 bucket with [aws s3api create-bucket](https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html)
+    - use the `--acl public-read` flag to make the bucket publicly available
+
+4. Copy your images to S3 with [aws s3 cp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/cp.html)
+    - use the `--acl public-read` flag to make the image directory publicly available
+
+### Ready
 Edit and run `template.bash` in your local shell.
 
 - `IMAGE_PATH` should be the local file path of the `ome.tif`
