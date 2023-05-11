@@ -4,6 +4,10 @@ The three steps can each be done by different people at different times.
   * Does not require command line
   * Requires Minerva Author
 
+2. [Prepare Dependencies][P]
+  * Minerva Author
+  * AWS S3
+
 2. [Rendering and Uploading Images][B]
   * Requires command line usage
   * Run on your laptop or on O2
@@ -13,6 +17,7 @@ The three steps can each be done by different people at different times.
   * Requires a GitHub account
 
 [A]: https://github.com/labsyspharm/minerva-story-upload/#writing-the-story
+[P]: https://github.com/labsyspharm/minerva-story-upload/#dependencies
 [B]: https://github.com/labsyspharm/minerva-story-upload/#render-and-upload-images
 [C]: https://github.com/labsyspharm/minerva-story-upload/#uploading-the-story-to-github
 
@@ -39,7 +44,7 @@ Send the following info to the person responsible for the next step:
   - Any HiTS/LSP image paths, if not using HiTS/LSP shared storage
   - Any CSV files used for names/segmentation, if not using HiTS/LSP shared storage
 
-# Render and Upload Images
+# Dependencies
 
 This describes local uses, [find specific O2 instructions here](https://github.com/labsyspharm/minerva-story-upload/tree/main/o2).
 
@@ -88,7 +93,8 @@ set up the AWS CLI:
 
 2. [Configure your AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config)
 
-### Ready
+# Render and Upload Images
+
 Edit and run `template.bash` in your local shell.
 
 - `IMAGE_PATH` should be the local file path of the `ome.tif`
