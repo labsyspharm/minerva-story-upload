@@ -43,6 +43,43 @@ Send the following info to the person responsible for the next step:
 
 This describes local uses, [find specific O2 instructions here](https://github.com/labsyspharm/minerva-story-upload/tree/main/o2).
 
+### Prepare for Minerva Author
+
+All commands should be run in "Terminal" on MacOS and "Anaconda Prompt" on Windows.
+
+First, download this repository through the git command line:
+
+```
+git clone https://github.com/labsyspharm/minerva-author.git
+```
+
+
+ * [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+ * Install [Anaconda](https://docs.anaconda.com/anaconda/install/windows/)
+ * Move [openslide](https://openslide.org/download/#windows-binaries) "bin" directory to "minerva-author/src"
+ * Run `conda install -c anaconda git`
+
+Then run the following commands to set up the development environment:
+
+```
+cd minerva-author
+conda env create -f requirements.yml
+conda activate minerva-author
+```
+
+### MacOS
+
+ * install [homebrew](https://brew.sh/) and run `brew install openslide`.
+ * Install [Anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
+
+Then run the following commands to set up the development environment:
+
+```
+cd minerva-author
+conda env create -f requirements.yml
+conda activate minerva-author
+```
+
 ### Prepare for AWS
 
 set up the AWS CLI:
