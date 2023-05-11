@@ -45,47 +45,11 @@ This describes local uses, [find specific O2 instructions here](https://github.c
 
 Edit and run `template.bash` in your local shell.
 
-### Render Images
+- `IMAGE_PATH` should be the local file path of the `ome.tif`
+- `JSON_PATH` should be the local file path of saved `story.json`
+- `PROJECT` should be a custom name of your minerva story project
 
-Now, Edit "render-template.bash"
-
-- set `INPUT_PROJECT="project-name"`
-- set `INPUT_NAME="story-name"`
-- set `INPUT_IMAGE` to the name of the image in `scratch3`
-- set `INPUT_JSON` to the name of the "story.json" file in `~/final-story-files`
-
-Then schedule the render:
-
-```
-sbatch render-template.bash
-```
-
-Move on once `squeue -u $USER` shows only one command with the NAME of "bash".
-
-### Upload Images
-
-Now, Edit "upload-template.bash"
-
-- set `INPUT_PROJECT="project-name"`
-- set `INPUT_NAME="story-name"`
-
-Then schedule the upload:
-```
-sbatch upload-template.bash
-```
-
-Now, the `story.json` files in `~/data` should be able to render Minerva Stories, with images loaded from S3
-
-### Copy the exhibit.json
-
-Copy the `exhibit.json` from `~/data/INPUT_PROJECT/INPUT_NAME` to your own device:
-```
-scp USER@o2.hms.harvard.edu:/home/USER/data/INPUT_PROJECT/INPUT_NAME/exhibit.json .
-```
-
-Then send that `exhibit.json` to the person completing the next step:
-
-# Uploading the story to GitHub
+Now you can use the resulting `index.html` and `exhibit.json` in your project folder.
 
 There are three steps to publishing to "tissue-atlas.org"
 - [Modify a copy of `cycif.org`][C1] to include your `exhibit.json`
