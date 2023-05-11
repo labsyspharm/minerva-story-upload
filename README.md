@@ -46,8 +46,6 @@ Send the following info to the person responsible for the next step:
 - [O2 Environment][B2]
 - [Final Story Files][B3]
 - [Copy to scratch3][B4]
-- [Specify CSV paths][B5]
-- [Underline Markers (optional)][B6]
 - [Render Images][B7]
 - [Upload Images][B8]
 - [Copy the `exhibit.json`][B9]
@@ -56,8 +54,6 @@ Send the following info to the person responsible for the next step:
 [B2]: https://github.com/labsyspharm/minerva-story-upload/#o2-environment
 [B3]: https://github.com/labsyspharm/minerva-story-upload/#final-story-files
 [B4]: https://github.com/labsyspharm/minerva-story-upload/#copy-to-scratch3
-[B5]: https://github.com/labsyspharm/minerva-story-upload/#specify-csv-paths
-[B6]: https://github.com/labsyspharm/minerva-story-upload/#underline-markers
 [B7]: https://github.com/labsyspharm/minerva-story-upload/#render-images
 [B8]: https://github.com/labsyspharm/minerva-story-upload/#upload-images
 [B9]: https://github.com/labsyspharm/minerva-story-upload/#copy-the-exhibitjson
@@ -120,6 +116,7 @@ Move on once `squeue -u $USER` shows only one command with the NAME of "bash".
 
 `mkdir ~/data`
 
+<!---
 ### Specify CSV paths
 
 You will also need to edit you "story.json" file. 
@@ -145,7 +142,7 @@ To replace multiple markers, separte each marker with `\|`:
 ```
 %s@\([^"`]\)\<\(DNA1\|DNA2\|DNA3\)\>\([^"`]\)@\1`\2`\3@gc
 ```
-
+--->
 ### Render Images
 
 Now, Edit "render-template.bash"
