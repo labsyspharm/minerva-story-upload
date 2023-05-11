@@ -6,12 +6,11 @@ The three steps can each be done by different people at different times.
 
 2. [Rendering and Uploading Images][B]
   * Requires command line usage
-  * Done locally or on O2
+  * Run on your laptop or on O2
 
 3. [Uploading the Story to GitHub][C]
   * Does not require command line
   * Requires a GitHub account
-
 
 [A]: https://github.com/labsyspharm/minerva-story-upload/#writing-the-story
 [B]: https://github.com/labsyspharm/minerva-story-upload/#rendering-and-uploading-images
@@ -42,7 +41,9 @@ Send the following info to the person responsible for the next step:
 
 # Render and Upload Images
 
-These instructions may be followed locally, [find specific O2 instructions here](https://github.com/labsyspharm).
+This describes local uses, [find specific O2 instructions here](https://github.com/labsyspharm/minerva-story-upload/tree/main/o2).
+
+Edit and run `template.bash` in your local shell.
 
 ### Render Images
 
