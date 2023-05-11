@@ -13,7 +13,7 @@ The three steps can each be done by different people at different times.
   * Requires a GitHub account
 
 [A]: https://github.com/labsyspharm/minerva-story-upload/#writing-the-story
-[B]: https://github.com/labsyspharm/minerva-story-upload/#rendering-and-uploading-images
+[B]: https://github.com/labsyspharm/minerva-story-upload/#render-and-upload-images
 [C]: https://github.com/labsyspharm/minerva-story-upload/#uploading-the-story-to-github
 
 # Writing the story
