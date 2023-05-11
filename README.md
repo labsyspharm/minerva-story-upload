@@ -46,8 +46,6 @@ Send the following info to the person responsible for the next step:
 
 # Dependencies
 
-This describes local uses, [find specific O2 instructions here](https://github.com/labsyspharm/minerva-story-upload/tree/main/o2).
-
 ### Prepare for Minerva Author
 
 All commands should be run in "Terminal" on MacOS and "Anaconda Prompt" on Windows.
@@ -95,7 +93,7 @@ set up the AWS CLI:
 
 # Render and Upload Images
 
-Edit and run `template.bash` in your local shell.
+Edit and run `template.bash` in your local shell. Alternate [O2 instructions here](https://github.com/labsyspharm/minerva-story-upload/tree/main/o2).
 
 - `IMAGE_PATH` should be the local file path of the `ome.tif`
 - `JSON_PATH` should be the local file path of saved `story.json`
