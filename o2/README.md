@@ -32,15 +32,19 @@ conda activate minerva-author
 
 ### Rendering
 
-Store images in `/n/scratch3/users/*/*` under `./DATE/*.ome.tif`. Store story.json files in `~/DATE/sources/*.story.json`. Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. On login node, to render images:
+Store all images in your scratch directory, with the curretn DATE "/n/scratch3/users/*/*/DATE/*.ome.tif". Likewise, copy story.json files to "~/DATE/sources/*.story.json", or "~/DATE/sources/default.story.json" if using uniform rendering settings across samples. Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. On login node, to render images:
 
-```sbatch render.bash```
+```
+sbatch render.bash
+```
 
 ### Transfering
 
-Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. To transfer images to AWS, on transfer node (after no jobs in `squeue -u $USER`):
+Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match the sample names from the previous step. To transfer images to AWS, on transfer node (after no jobs are shown in `squeue -u $USER`):
 
-```bash transfer.bash```
+```
+bash transfer.bash
+```
 
 To transfer metadata to AWS, on transfer node (after no jobs in `squeue -u $USER`):
 
