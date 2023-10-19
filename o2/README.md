@@ -1,27 +1,30 @@
 # Rendering and uploading images
 
+This guide is intended for users performing bulk uploads of large numbers Minerva Stories, begining with `*.story.json` specifications created either manually in Minerva Author or automatically with Auto-Minerva, e.g. [`story.py`](https://github.com/labsyspharm/mcmicro/blob/master/modules/ext/story.py). Once you have access to those stories locally, and access to the OME-TIFF images in "/n/scratch3" on O2, this guide will walk you through uploading rendered `jpeg` pyramids and Minerva Story `exhibit.json` configurations to an AWS `s3` bucket.
+
 ### Login to O2 
 
-- Know your O2 Login Username / Password
-- Understand how to ssh from a command line
-- Transfer any .story.json or .csv files to o2
-  - use specific `final-story-files` folder name
+This guide begins with copying several "story-files/SAMPLE/SAMPLE.story.json" for many samples your local computer to O2 with the `scp` command on the command line. The files are copied under the current date in the "sources" folder in your O2 home directory.
 
 ```
-scp -r final-story-files USER@o2.hms.harvard.edu:/home/USER/final-story-files 
+DATE=$(date '+%Y-%m-%d')
+mv story-files "${DATE}/sources"
+scp -r $DATE $USER@o2.hms.harvard.edu:~/$DATE
 ```
 
 ### O2 Environment 
 
-Login To O2
+Now, prepare to run the rendering and metadata pipeline by logging in to O2, and copying the source code for Minerva Author.
 
 ```
-ssh USERNAME@o2.hms.harvard.edu
+ssh $USER@o2.hms.harvard.edu
 git clone https://github.com/labsyspharm/minerva-author.git
 cd minerva-author
 ```
 
 Install Minerva Author
+
+Create and activate a conda environment. The conda environment must be activated to run `render.bash`.
 
 ```
 conda env create -f requirements.yml
