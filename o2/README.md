@@ -51,7 +51,7 @@ bash transfer.bash
 
 To transfer metadata to AWS, on a transfer node (after no jobs in `squeue -u $USER`):
 
-Fork `https://github.com/thejohnhoffer/minerva-metadata-template` and customize metadata sources and display.
+Fork `https://github.com/thejohnhoffer/minerva-metadata-template` and customize metadata sources and displayed fields.
 
 ```cd metadata
 git clone https://github.com/thejohnhoffer/minerva-metadata-template
