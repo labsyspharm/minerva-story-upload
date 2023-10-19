@@ -40,7 +40,7 @@ sbatch render.bash
 
 ### Transfering
 
-Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match the sample names from the previous step. To transfer images to AWS, on transfer node (after no jobs are shown in `squeue -u $USER`):
+Update `DATE`, `TITLE`, and `SAMPLES` in `transfer.bash`; the `SAMPLES` must match the sample names from the previous step. To transfer images to AWS, on transfer node (after no jobs are shown in `squeue -u $USER`):
 
 ```
 bash transfer.bash
