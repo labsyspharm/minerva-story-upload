@@ -32,7 +32,7 @@ conda activate minerva-author
 
 ### Rendering
 
-Store all images in your scratch directory, with the curretn DATE "/n/scratch3/users/\*/\*/DATE/\*.ome.tif". Likewise, copy story.json files to "\~/DATE/sources/\*.story.json", or "\~/DATE/sources/default.story.json" if using uniform rendering settings across samples. Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. On login node, to render images:
+Store all images in your scratch directory, with the curretn DATE "/n/scratch3/users/\*/\*/DATE/\*.ome.tif". Likewise, copy story.json files to "\~/DATE/sources/\*.story.json", or "\~/DATE/sources/default.story.json" if using the same rendering settings across samples. Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. On login node, to render images:
 
 ```
 sbatch render.bash
