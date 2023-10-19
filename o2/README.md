@@ -4,7 +4,7 @@ This guide is intended for users performing bulk uploads of large numbers Minerv
 
 ### Login to O2 
 
-This guide begins with copying several "story-files/SAMPLE/SAMPLE.story.json" for many samples your local computer to O2 with the `scp` command on the command line. The files are copied under the current date in the "sources" folder in your O2 home directory.
+This guide begins with copying several "story-files/SAMPLE/SAMPLE.story.json" for many samples from your local computer to O2 with the `scp` command on the command line. The files are copied under the current date in the "sources" folder in your O2 home directory.
 
 ```
 DATE=$(date '+%Y-%m-%d')
