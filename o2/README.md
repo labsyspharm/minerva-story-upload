@@ -35,7 +35,7 @@ conda activate minerva-author
 
 ### Rendering
 
-Store all images in your scratch directory, with the current date "/n/scratch3/users/\*/\*/DATE/\*.ome.tif". Likewise, ensure story.json files have been copied to "\~/DATE/sources". A "default.story.json" in that directory may be used to apply the same rendering settings across samples. Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. By default, the `-t` parameter in `render.bash` is set to 30 minutes. Increase if needed, or consider generating "subsample" `story.json` files with fewer channels. On a login node, to render images:
+Store all images in your scratch directory, with the current date "/n/scratch3/users/\*/\*/DATE/\*.ome.tif". Likewise, ensure story.json files have been copied to "\~/DATE/sources". A "default.story.json" in that directory may be used to apply the same rendering settings across samples. Update `DATE`, `TITLE`, and `SAMPLES` in `render.bash`; the `SAMPLES` must match ome-tiff names in scratch3. By default, the `-t` parameter in `render.bash` is set to 30 minutes. Increase if needed, or consider generating many "subsample" `story.json` files with fewer channels. On a login node, to render images:
 
 ```
 sbatch render.bash
