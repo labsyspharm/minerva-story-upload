@@ -39,10 +39,9 @@ fi
 echo "Rendering ${SAMPLE}"
 
 create_story () {
-  STORY_PATH="${SAMPLE}"
-  STORY_IMG="${SCRATCH}/${DATE}/${STORY_PATH}.ome.tif"
-  STORY_URL="https://s3.amazonaws.com/${BUCKET}/${TITLE}/${STORY_PATH}"
-  STORY_DIR="${SCRATCH}/${DATE}/${STORY_PATH}"
+  STORY_IMG="${SCRATCH}/${DATE}/${SAMPLE}.ome.tif"
+  STORY_URL="https://s3.amazonaws.com/${BUCKET}/${TITLE}/${SAMPLE}"
+  STORY_DIR="${SCRATCH}/${DATE}/${SAMPLE}"
 
   CMD="$SCRIPT $STORY_IMG $JSON $STORY_DIR --url $STORY_URL"
 
