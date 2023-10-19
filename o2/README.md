@@ -43,13 +43,13 @@ sbatch render.bash
 
 ### Transfering
 
-Update `DATE`, `TITLE`, and `SAMPLES` in `transfer.bash`; the `SAMPLES` must match the sample names from the previous step. To transfer images to AWS, on transfer node (after no jobs are shown in `squeue -u $USER`):
+Update `DATE`, `TITLE`, and `SAMPLES` in `transfer.bash`; the `SAMPLES` must match the sample names from the previous step. To transfer images to AWS, on a transfer node (after no jobs are shown in `squeue -u $USER`):
 
 ```
 bash transfer.bash
 ```
 
-To transfer metadata to AWS, on transfer node (after no jobs in `squeue -u $USER`):
+To transfer metadata to AWS, on a transfer node (after no jobs in `squeue -u $USER`):
 
 Fork `https://github.com/thejohnhoffer/minerva-metadata-template` and customize metadata sources and display.
 
