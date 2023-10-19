@@ -8,6 +8,7 @@ This guide begins with copying several "story-files/SAMPLE/SAMPLE.story.json" fo
 
 ```
 DATE=$(date '+%Y-%m-%d')
+mkdir $DATE
 mv story-files "${DATE}/sources"
 scp -r $DATE $USER@o2.hms.harvard.edu:~/$DATE
 ```
