@@ -1,6 +1,6 @@
 # Rendering and uploading images
 
-This guide is intended for users performing bulk uploads of large numbers Minerva Stories, begining with `*.story.json` specifications created either manually in Minerva Author or automatically with Auto-Minerva, e.g. [`story.py`](https://github.com/labsyspharm/mcmicro/blob/master/modules/ext/story.py). Once you have access to those stories locally, and access to the OME-TIFF images in "/n/scratch3" on O2, this guide will walk you through uploading rendered `jpeg` pyramids and Minerva Story `exhibit.json` configurations to an AWS `s3` bucket.
+This guide is intended for users performing bulk uploads of large numbers Minerva Stories, begining with `*.story.json` specifications created either manually in Minerva Author or automatically with Auto-Minerva, e.g. [`story.py`](https://github.com/labsyspharm/mcmicro/blob/master/modules/ext/story.py). Once you have access to those stories locally, and access to the OME-TIFF images in "/n/scratch3" on O2, this guide will walk you through rendering and uploading `jpeg` pyramids and Minerva Story `exhibit.json` configurations to an AWS `s3` bucket.
 
 ### Login to O2 
 
