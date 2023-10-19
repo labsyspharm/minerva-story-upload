@@ -2,7 +2,7 @@
 #SBATCH -c 1
 #SBATCH -p short
 #SBATCH --mem 1g
-#SBATCH -t 0:01:30
+#SBATCH -t 0:30:00
 #SBATCH --array=0-14
 module load conda3
 eval "$(conda shell.bash hook)"
