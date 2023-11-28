@@ -19,7 +19,7 @@ The three steps can each be done by different people at different times.
 [A]: https://github.com/labsyspharm/minerva-story-upload/#writing-the-story
 [P]: https://github.com/labsyspharm/minerva-story-upload/#dependencies
 [B]: https://github.com/labsyspharm/minerva-story-upload/#render-and-upload-images
-[C]: https://github.com/labsyspharm/minerva-story-upload/#modifying-cyciforg
+[C]: https://github.com/labsyspharm/minerva-story-upload/#upload-to-github
 
 # Writing the story
 
@@ -99,7 +99,9 @@ Edit and run `template.bash` in your local shell. Alternate [O2 instructions her
 - `JSON_PATH` should be the local file path of saved `story.json`
 - `PROJECT` should be a custom name of your minerva story project
 
-Now you can use the resulting `index.html` and `exhibit.json` in your project folder.
+Now you can use the resulting `index.html` and `exhibit.json` in your project folder. You must also upload the subdirectories of "images/out" to the `www.cycif.org` AWS S3 bucket with an arbitrary prefix referred to in this document as "your project/paper name without spaces". The `template.bash` script will run the AWS S3 upload, but the upload process may also be performed in the AWS console.
+
+# upload-to-github
 
 There are three steps to publishing to "tissue-atlas.org"
 - [Modify a copy of `cycif.org`][C1] to include your `exhibit.json`
