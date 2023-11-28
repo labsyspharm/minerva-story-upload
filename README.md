@@ -129,47 +129,13 @@ https://github.com/YOUR-USERNAME/cycif.org
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
- - `_data/` (underscore in front)
+ - `_data/` (notice the underscore)
+ - `config-`
  - your project/paper name without spaces
- - `-2022/` (or the current year)
- - your story/figure name without spaces
- - `.json`
-
-The UI should now look like this:
-
-<img width="552" alt="exhibit config name" src="https://user-images.githubusercontent.com/9781588/163011253-4f68377f-b758-4ffb-9e3d-1da5a8b3698c.png">
+ - `/exhibit.json`
 
 * Now copy and paste the contents of your `exhibit.json` file into the body of the new file.
   - The contents of this file should start with a `{` and end with a `}`
-
-- While in the "\_data/config-PROJECT-NAME-YEAR/" directory
-    - add a new file based on this template, called `index.yml`:
-
-```
-publication:
-  title: PAPER TITLE
-  authors: AUTHORS
-  journal: JOURNAL
-  links:
-    - Publisher Page: ARTILCLE-LINK
-
-PROJCET TITLE:
-  - title: PROJCET TITLE
-    description: PROJECT DESCRIPTION
-    thumbnail file name: PROJECT-NAME-YEAR.jpg
-    links:
-      - PAGE TITLE: osd-STORY-NAME
-```
-
-- The `PAPER TITLE` should be the title of the associated paper
-- The `AUTHORS` should be comma-separated list of authors of the paper
-- The `JOURNAL` should be the name of the journal that published your paper, if any
-- The `PROJECT TITLE` can be anything related to the project
-- The `PAGE TITLE` can be anything related to the story
-
-- The year eg. `2022`, must match the year used when adding your `exhibit.json` 
-- The `PROJECT-NAME` must match the `project-name` used when adding your `exhibit.json`
-- The `STORY-NAME` must match the `story-name` used when adding your `exhibit.json`
 
 * Now click the `<> Code` icon on the left to return to the root of your fork.
 
@@ -178,86 +144,22 @@ PROJCET TITLE:
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
- - `data/`(no underscore)
- - `config-`
+ - `data/`
  - your project/paper name without spaces
- - `-2022/` (or the current year)
- - `osd-` 
- - your story/figure name without spaces
- - `.md` (Markdown)
-
-The UI should now look like this:
-
-<img width="503" alt="markdown file name" src="https://user-images.githubusercontent.com/9781588/163010180-007ecd19-5dee-48ae-98b6-087aa7ff4f4a.png">
+ - `/index.md` (Markdown)
 
 * Now modify, copy and paste this template into the body of the new file:
 
 ```md
 ---
-title: PAGE TITLE
-layout: osd-exhibit
-paper: config-PROJECT-NAME-2022
-figure: STORY-NAME
+title: [your project/paper name without spaces]
+layout: minerva-1-5
+exhibit: config-[your project/paper name without spaces]
+redirect_from: /[your project/paper name without spaces]
 ---
 ```
 
-- The `PAGE TITLE` can be anything
-- The text `osd-exhibit` must not be changed
-- The year eg. `2022`, must match the year used in uploading your `exhibit.json` 
-- The `PROJECT-NAME` must match the `project-name` used in uploading your `exhibit.json`
-- The `STORY-NAME` must match the `story-name` used in uploading your `exhibit.json`
-
-## Add index.html
-
-- While in the "data/PROJECT-NAME-YEAR/" directory
-    - add a new file based on this template, called `index.html`:
-
-```
----
-layout: default
-title: PROJECT TITLE
----
-{% assign sectionId = page.url | split: '/' | last %}
-{% assign config = sectionId | prepend: 'config-' %}
-
-{% for yml_hash in site.data[config] %}
-    {% if yml_hash[0] == 'index' %}
-        {% assign pubData=yml_hash[1] %}
-    {% endif %}
-{% endfor %}
-
-{% include data-index-default.html
-    sectionId = sectionId
-    pubData=pubData
-    thumbnailDir=sectionId %}
-```
-
-- Set the PROJECT TITLE to a descriptive title of your project/paper.
 - Now click the `<> Code` icon on the left to return to the root of your fork.
-
-## Addding images
-
-Click "Add File" and "Create New File"... then begin typing or pasting:
-
-In the "Name of file..." input, type:
- - `assets/img/`
- - your project/paper name without spaces
- - `-2022/` (or the year used for the story on cycif.org)
- - your story/figure name without spaces
- - `.jpg`
-
-The UI should now look like this:
-
-<img width="552" alt="jpg pathname" src="https://user-images.githubusercontent.com/9781588/163036133-d8150903-183e-4f19-8cb7-8353e9f82435.png">
-
-GitHub's Website only allows us to create new folders for text files 
-  - Create the empty "STORY-NAME.jpg" anyway
-  - Then rename your screenshot on your computer to match your `STORY-NAME.jpg` file
-  - Upload to overwrite the empty `STORY-NAME.jpg` file
-
-WIthin the `cycif.org/assets/img/project-name/` directory, click "add file" and "upload files":
-  - Navigate to your `STORY-NAME.jpg` and upload the image.
-
 
 ## Modifying Tissue Atlas
 
@@ -273,48 +175,44 @@ Ensure that you have transferred to your own fork on GitHub. The URL should be:
 https://github.com/YOUR-USERNAME/harvardtissueatlas
 ```
 
-### Uploading page markup
+### Uploading data card
 
 Click "Add File" and "Create New File"... then begin typing or pasting:
 
 In the "Name of file..." input, type:
  - `_data-cards/`
  - your project/paper name without spaces
- - `-2022/` (or the year used for the story on cycif.org)
- - `osd-` 
- - your story/figure name without spaces
- - `.md` (Markdown)
-
-The UI should now look like this:
-
-<img width="607" alt="markdown file name" src="https://user-images.githubusercontent.com/9781588/163029418-794f21eb-83a8-47c4-84f4-9fe067340f88.png">
+ - `index.md` (Markdown)
 
 * Now modify, copy and paste this template into the body of the new file:
 
 ```md
 ---
-title: TITLE
-date: '2022-04-12'
-image: https://www.cycif.org/assets/img/PROJECT-NAME-YEAR.jpg
-minerva_link: https://www.cycif.org/data/PROJECT-NAME-YEAR/osd-STORY-NAME.html
-info_link: https://www.cycif.org/data/PROJECT-NAME-YEAR/index.html
+title: [your project/paper name without spaces]
+image: https://s3.amazonaws.com/www.cycif.org/[your project/paper name without spaces]/thumbnail--default.jpg
+minerva_link: https://www.cycif.org/data/[your project/paper name without spaces]
+date: 'YYYY-MM-DD'
 show_page_link: false
+info_link: null
+tags: []
 ---
 ```
 
-- The `PAGE TITLE` can be anything
-- The date should be in 'YYYY-MM-DD' format. The quotes are needed.
-- THE `YEAR` must match the `YEAR` used for the story on cycif.org
-- The `PROJECT-NAME` must match the `project-name` used on cycif.org
-- The `STORY-NAME` must match the `story-name` used on cycif.org
+### Uploading redirect
 
-Additionally, add the following line below the date if the project belongs to an atlas:
+Click "Add File" and "Create New File"... then begin typing or pasting:
 
+In the "Name of file..." input, type:
+ - `_redirects/`
+ - `[your project/paper name without spaces].md` (Markdown)
+
+* Now modify, copy and paste this template into the body of the new file:
+
+```md
+---
+redirect_to: https://www.cycif.org/data/[your project/paper name without spaces]
+---
 ```
-atlas: ATLAS
-```
-
-- Replace the word "ATLAS" with the name of the atlas including the images you're publishing.
 
 ## Submitting changes for approval
 
