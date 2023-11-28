@@ -19,7 +19,7 @@ The three steps can each be done by different people at different times.
 [A]: https://github.com/labsyspharm/minerva-story-upload/#writing-the-story
 [P]: https://github.com/labsyspharm/minerva-story-upload/#dependencies
 [B]: https://github.com/labsyspharm/minerva-story-upload/#render-and-upload-images
-[C]: https://github.com/labsyspharm/minerva-story-upload/#uploading-the-story-to-github
+[C]: https://github.com/labsyspharm/minerva-story-upload/#modifying-cyciforg
 
 # Writing the story
 
